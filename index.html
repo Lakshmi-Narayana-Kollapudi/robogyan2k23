@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>fest website</title>
+</head>
+<body>
+    <section id="head" class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#head">HOME</a></li>
+                    <li><a href="#work">WORKSHOP</a></li>
+                    <li><a href="#eve">EVENTS</a></li>
+                    <li><a href="">SCHEDULE</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>ROBOGYAN'2K23</h1>
+        <p>Xchange of Knowledge</p>
+        <a href="https://forms.gle/xJwgnXJaSX4amhxA7" class="hero-btn" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>Register Now</a>
+    </div>
+    </section> 
+
+<!-- ........workshops........ -->
+<section id="work" class="workshops">
+    <h1>Workshops</h1>
+    <p>“Learning and innovation go hand in hand. The arrogance of success is to think that what <br>you 
+        did yesterday will be sufficient for tomorrow.” William Pollard</p>
+
+    <div class="row">
+        <div class="workshop-col">
+            <h3>Robot Perception & Manipulation</h3>
+            <img src="robo35.jpg" class="image">
+            <p>Robotic systems can process images and video far faster than humans. Using that advantage in 
+                “perception” has paved the way for breakthroughs in security, surveillance and related activities.</p>
+            <a class="button" href="#">Register</a>
+        </div>
+        <div class="workshop-col">
+            <h3>Motion Planning of Robots</h3>
+            <img src="naorobot.png" class="image">
+            <p>Motion planning is a term used in robotics for the process of breaking down a desired movement task into 
+                discrete motions that satisfy movement constraints and possibly optimize some aspect of the movement.
+            </p>
+            <a class="button" href="#">Register</a>
+        </div>
+    </div>
+</section>
+<!-- -------events------ -->
+<section id="eve" class="events">
+    <h1>Events</h1>
+    <p>"Every enterprise is learning and teaching institution. <br>Training and development must be built into it on all 
+        levels, training, and development that never stop."</p>
+    <div class="boxes">
+        <div class="box">
+            <h2>Paper Presentation</h2>
+            <img src="https://yantra2k22.web.app/static/media/paper.95c7f007db1539e9d7d4.jpg" alt="Random Image">
+            <p>
+                <ul>
+                    <li>A Paper presentation combines text and graphics to present the topic in a way that is visually interesting and accessible.</li>
+                    <li>It should clearly articulate what you did, how you did it, why you did it, and what it contributes to your field and the larger field of human knowledge.</li>
+                </ul>
+            </p>
+            <h2>Fee: Rs.100/-</h2>
+            <a class="button" href="#">Register</a>
+        </div>
+        <div class="box">
+            <h2>PPT Presentation</h2>
+            <img src="https://yantra2k22.web.app/static/media/powerpoint.1b9fbb3edad6fa4a0a45.jpg" alt="Random Image">
+            <p>
+                <ul>
+                    <li>A poster presentation combines text and graphics to present the topic in a way that is visually interesting and accessible.</li>
+                    <li>A PPT should clearly articulate what you did, how you did it, why you did it, and what it contributes to your field and the larger field of human knowledge.</li>    
+                </ul>
+            </p>
+            <h2>Fee: Rs.100/-</h2>
+            <a class="button" href="#">Register</a>
+        </div>
+        <div class="box">
+            <h2>Poster Presentation</h2>
+            <img src="https://yantra2k22.web.app/static/media/poster.cb6d81e9bf3326d8f1cb.jpg" alt="Random Image">
+            <p>
+                <ul>
+                    <li>A poster presentation combines text and graphics to present the topic in a way that is visually interesting and accessible.</li>
+                    <li>It should clearly articulate what you did, how you did it, why you did it, and what it contributes to your field and the larger field of human knowledge.</li>
+                </ul>
+            </p>
+            <h2>Fee: Rs.100/-</h2>
+            <a class="button" href="#">Register</a>
+        </div>
+        <div class="box">
+            <h2>Quiz</h2>
+            <img src="https://yantra2k22.web.app/static/media/paper.95c7f007db1539e9d7d4.jpg" alt="Random Image">
+            <p>
+                <ul>
+                    <li>A Paper presentation combines text and graphics to present the topic in a way that is visually interesting and accessible.</li>
+                    <li>It should clearly articulate what you did, how you did it, why you did it, and what it contributes to your field and the larger field of human knowledge.</li>
+                </ul>
+            </p>
+            <h2>Fee: Rs.100/-</h2>
+            <a class="button" href="#">Register</a>
+        </div>
+       
+    </div>
+</section>
+
+<!-- .........Javascript for toggle menu....... -->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){ 
+        navLinks.style.right="0";
+    }
+  
+    function hideMenu(){
+        navLinks.style.right="-300px";
+    }
+
+</script>
+</body>
+</html>
